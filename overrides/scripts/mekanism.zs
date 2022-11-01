@@ -82,13 +82,6 @@ craftingTable.addShaped("mk_atomic_disassembler",
         [<item:mekanism:alloy_infused>, <item:mekanism:ingot_refined_obsidian>, <item:mekanism:alloy_infused>]
 ]);
 
-craftingTable.addShaped("mk_pellet_polonium2",
-    <item:mekanism:pellet_polonium>, [
-        [<item:contenttweaker:polonium_nugget>, <item:contenttweaker:polonium_nugget>, <item:contenttweaker:polonium_nugget>],
-        [<item:contenttweaker:polonium_nugget>, <item:contenttweaker:polonium_nugget>, <item:contenttweaker:polonium_nugget>],
-        [<item:contenttweaker:polonium_nugget>, <item:contenttweaker:polonium_nugget>, <item:contenttweaker:polonium_nugget>]
-]);
-
 craftingTable.removeRecipe(<item:mekanismgenerators:fusion_reactor_frame>);
 craftingTable.addShaped("mk_fusion_reactor_frame",
     <item:mekanismgenerators:fusion_reactor_frame> * 4, [
