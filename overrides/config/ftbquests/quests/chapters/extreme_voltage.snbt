@@ -1,0 +1,339 @@
+{
+	id: "27B0DBE34C0D843A"
+	group: "0AE8F83664DC04A0"
+	order_index: 4
+	filename: "extreme_voltage"
+	title: "Extreme Voltage"
+	icon: "mekanism:pellet_antimatter"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Extreme Voltage"
+			icon: "mekanism:pellet_antimatter"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Energy's Final Form"
+			description: ["From here on you generally WON'T get any rewards for completing quests, as you already have everything."]
+			dependencies: ["6D7DD437D91D0903"]
+			size: 1.5d
+			id: "19477E17BC8BDECD"
+			tasks: [{
+				id: "7EE31DA1EC342D72"
+				type: "item"
+				item: "mekanism:sps_casing"
+			}]
+		}
+		{
+			title: "Compressed just a bit too much"
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["19477E17BC8BDECD"]
+			id: "0FCF5072A6B2B135"
+			tasks: [{
+				id: "5F1775D6A0048718"
+				type: "item"
+				item: "extendedcrafting:compressor"
+			}]
+		}
+		{
+			title: "Better than Matter"
+			icon: "mekanism:pellet_antimatter"
+			x: 2.0d
+			y: 0.0d
+			shape: "diamond"
+			dependencies: ["19477E17BC8BDECD"]
+			id: "53FAC5C761D89BC1"
+			tasks: [{
+				id: "316BB18126220E83"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
+			}]
+			rewards: [{
+				id: "41367BC71C9730A9"
+				type: "item"
+				item: "cyclic:heart"
+			}]
+		}
+		{
+			title: "flyhackz"
+			icon: "mekanism:module_gravitational_modulating_unit"
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["53FAC5C761D89BC1"]
+			id: "04658B1DDC2AFE52"
+			tasks: [{
+				id: "2595FAD31380EB28"
+				type: "item"
+				item: "mekanism:module_gravitational_modulating_unit"
+			}]
+		}
+		{
+			title: "Every ingot in the game 10.000x"
+			x: 2.0d
+			y: 4.0d
+			dependencies: ["0FCF5072A6B2B135"]
+			id: "76E1644BA365DD30"
+			tasks: [{
+				id: "34395136EE23B84B"
+				type: "item"
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		}
+		{
+			title: "It has RGB!"
+			icon: "contenttweaker:extreme_alloy"
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["53FAC5C761D89BC1"]
+			id: "547BB8E1D528B905"
+			tasks: [{
+				id: "7C56B32568C5CDC7"
+				type: "item"
+				item: "contenttweaker:extreme_alloy"
+			}]
+		}
+		{
+			title: "With all of our Powers combined!"
+			icon: "extendedcrafting:the_ultimate_ingot"
+			x: 4.0d
+			y: 2.0d
+			shape: "gear"
+			description: [
+				"You beat this modpack!"
+				"This is the end!"
+				"Finally!"
+				"After all of this..."
+				"You did it!"
+				"...or did you?"
+			]
+			dependencies: [
+				"53FAC5C761D89BC1"
+				"6AA84885CD3DB20F"
+				"76E1644BA365DD30"
+				"68A92FAD6A444EBC"
+				"290598F08EBACE94"
+				"547BB8E1D528B905"
+				"7857EC664D3FA88B"
+				"0BC2D11094895613"
+				"38F0D5FF9A43507D"
+				"47680C3379992686"
+				"7D347627B9B42DEE"
+				"0CD31845CC47CEDC"
+			]
+			size: 2.0d
+			id: "537997F9F37BDCA4"
+			tasks: [{
+				id: "6709193C94C65962"
+				type: "item"
+				item: "extendedcrafting:the_ultimate_ingot"
+			}]
+			rewards: [
+				{
+					id: "7718322809D0C9D0"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "13A79CDD5AB7C7BA"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "60EAF3951784BBB8"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "3EDFE40FC5F81102"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "34EBA69F53ECD127"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "78C0D375B7220F78"
+					type: "item"
+					item: "mekanism:pellet_antimatter"
+					count: 10
+				}
+			]
+		}
+		{
+			title: "Yin and Yang"
+			icon: "create:refined_radiance"
+			x: 4.0d
+			y: 4.0d
+			dependencies: ["6D7DD437D91D0903"]
+			id: "0CD31845CC47CEDC"
+			tasks: [
+				{
+					id: "0E7865001BE17F81"
+					type: "item"
+					item: "psi:ivory_psimetal_block"
+				}
+				{
+					id: "1593A07B8A0ABA60"
+					type: "item"
+					item: "psi:ebony_psimetal_block"
+				}
+				{
+					id: "1F93B7FD2ED74FC0"
+					type: "item"
+					item: "create:shadow_steel"
+				}
+				{
+					id: "6F4997E9D30D4592"
+					type: "item"
+					item: "create:refined_radiance"
+				}
+			]
+		}
+		{
+			title: "item super fun!"
+			icon: "tconstruct:hepatizon_block"
+			x: 6.0d
+			y: 4.0d
+			dependencies: ["6D7DD437D91D0903"]
+			id: "7857EC664D3FA88B"
+			tasks: [{
+				id: "0425631479150066"
+				type: "item"
+				item: "tconstruct:hepatizon_block"
+			}]
+		}
+		{
+			title: "Magic!"
+			icon: "quark:rainbow_rune"
+			x: 6.0d
+			y: 2.0d
+			dependencies: ["6D7DD437D91D0903"]
+			id: "0BC2D11094895613"
+			tasks: [{
+				id: "42D40EA8F3AEE4A8"
+				type: "item"
+				item: "quark:rainbow_rune"
+			}]
+		}
+		{
+			title: "any normal bookshelf may not be enough"
+			icon: "apotheosis:ender_library"
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["6D7DD437D91D0903"]
+			id: "6AA84885CD3DB20F"
+			tasks: [{
+				id: "713151B883672F4F"
+				type: "item"
+				item: "apotheosis:ender_library"
+			}]
+		}
+		{
+			title: "RTX 99999999 Ti O.C. Extreme"
+			icon: {
+				id: "hostilenetworks:prediction"
+				Count: 1b
+				tag: {
+					data_model: {
+						id: "hostilenetworks:shulker"
+					}
+				}
+			}
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["6D7DD437D91D0903"]
+			id: "47680C3379992686"
+			tasks: [
+				{
+					id: "0C7B7CE467EF80E1"
+					type: "item"
+					item: {
+						id: "hostilenetworks:prediction"
+						Count: 1b
+						tag: {
+							data_model: {
+								id: "hostilenetworks:guardian"
+							}
+						}
+					}
+				}
+				{
+					id: "689A446BBDF37D2F"
+					type: "item"
+					item: {
+						id: "hostilenetworks:prediction"
+						Count: 1b
+						tag: {
+							data_model: {
+								id: "hostilenetworks:shulker"
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Hmm yummmieeee!!!"
+			icon: "pamhc2foodextended:cornedbeefbreakfastitem"
+			x: 6.0d
+			y: 3.0d
+			dependencies: ["6D7DD437D91D0903"]
+			id: "68A92FAD6A444EBC"
+			tasks: [{
+				id: "6626E2C73B00BE93"
+				type: "item"
+				item: "pamhc2foodextended:cornedbeefbreakfastitem"
+			}]
+		}
+		{
+			title: "i luv u"
+			icon: "cyclic:heart"
+			x: 2.0d
+			y: 1.0d
+			dependencies: ["6D7DD437D91D0903"]
+			id: "290598F08EBACE94"
+			tasks: [{
+				id: "77C83BCB2A1CF1EC"
+				type: "item"
+				item: "cyclic:heart"
+			}]
+		}
+		{
+			title: "Windows ME 2000"
+			icon: "ae2extras:16m_cell_component"
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["6D7DD437D91D0903"]
+			id: "7D347627B9B42DEE"
+			tasks: [
+				{
+					id: "122D4672C03D9391"
+					type: "item"
+					item: "ae2extras:16m_cell_component"
+				}
+				{
+					id: "6034E65D6CED470B"
+					type: "item"
+					item: "lazierae2:speculation_core_64"
+				}
+			]
+		}
+		{
+			title: "many flux"
+			icon: "fluxnetworks:gargantuan_flux_storage"
+			x: 3.0d
+			y: 4.0d
+			dependencies: ["6D7DD437D91D0903"]
+			id: "38F0D5FF9A43507D"
+			tasks: [{
+				id: "21F21A0C990706F5"
+				type: "item"
+				item: "fluxnetworks:gargantuan_flux_storage"
+			}]
+		}
+	]
+}

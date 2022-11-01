@@ -1,0 +1,632 @@
+{
+	id: "37BE1A1FE370B38D"
+	group: "0AE8F83664DC04A0"
+	order_index: 0
+	filename: "create"
+	title: "Kinetic Energy"
+	icon: "create:large_cogwheel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Kinetic Energy"
+			icon: "create:large_cogwheel"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Who needs electricity anyways?"
+			dependencies: ["7CD9683C78F30D80"]
+			size: 1.5d
+			id: "1FD54B81D0D19A69"
+			tasks: [{
+				id: "411D3F7D0DA1CABE"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 16L
+			}]
+		}
+		{
+			title: "Basic Generation"
+			icon: "create:water_wheel"
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["1FD54B81D0D19A69"]
+			id: "6970F8A8AAD42AD4"
+			tasks: [
+				{
+					id: "1BA0E7650EC2B5CD"
+					type: "item"
+					item: "create:water_wheel"
+				}
+				{
+					id: "747D7525B9176C65"
+					type: "item"
+					item: "create:shaft"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "2E60A232F0FFE93D"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 8
+			}]
+		}
+		{
+			title: "The Power of Nature"
+			icon: "create:windmill_bearing"
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["6970F8A8AAD42AD4"]
+			id: "0D66BEE66F0F60F1"
+			tasks: [
+				{
+					id: "27780E9F04185EB9"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+				{
+					id: "37436FFD00261BB2"
+					type: "item"
+					item: "create:white_sail"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "4730C8595955B88A"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 10
+			}]
+		}
+		{
+			title: "Under Pressure"
+			icon: "create:mechanical_press"
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["6970F8A8AAD42AD4"]
+			id: "6200F74AFDD50850"
+			tasks: [{
+				id: "0AA57389B411437A"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+			rewards: [{
+				id: "2C9854342AE7203B"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 4
+			}]
+		}
+		{
+			title: "Rotational Alloyation Complex"
+			icon: "create:mechanical_mixer"
+			x: 4.0d
+			y: -2.0d
+			dependencies: [
+				"0D66BEE66F0F60F1"
+				"6200F74AFDD50850"
+			]
+			id: "25DE5C6DDA2350DC"
+			tasks: [{
+				id: "7A23CD89F62E5F03"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+			rewards: [{
+				id: "0F359E7853D4FF4A"
+				type: "item"
+				item: "create:basin"
+			}]
+		}
+		{
+			title: "Ultimate Miner"
+			icon: "create:mechanical_drill"
+			x: 2.0d
+			y: -4.0d
+			shape: "diamond"
+			dependencies: ["6200F74AFDD50850"]
+			id: "325511026D057638"
+			tasks: [
+				{
+					id: "26AB0B12FFD6AAA3"
+					type: "item"
+					item: "create:cart_assembler"
+				}
+				{
+					id: "2AFA55E23EF3108C"
+					type: "item"
+					item: "create:mechanical_drill"
+					count: 10L
+				}
+				{
+					id: "22F55BF28B4F62A3"
+					type: "item"
+					item: "minecraft:rail"
+					count: 16L
+				}
+				{
+					id: "470BF0DD184D6F54"
+					type: "item"
+					item: "minecraft:furnace_minecart"
+				}
+				{
+					id: "6C12C34E8976CD5D"
+					type: "item"
+					item: {
+						id: "create:super_glue"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "294FF1F4C336C56F"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "11216026C92EA515"
+					type: "item"
+					item: "create:zinc_ore"
+					count: 4
+				}
+				{
+					id: "7117E489556A90CB"
+					type: "item"
+					item: "minecraft:coal"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Fake Gold"
+			icon: "create:brass_sheet"
+			x: 6.0d
+			y: -2.0d
+			dependencies: [
+				"25DE5C6DDA2350DC"
+				"0D66BEE66F0F60F1"
+			]
+			id: "4EF202C31C3484EC"
+			tasks: [{
+				id: "29A048FEF83B048C"
+				type: "item"
+				item: "create:brass_sheet"
+			}]
+			rewards: [
+				{
+					id: "3408CD5BBE954200"
+					type: "item"
+					item: "create:zinc_ore"
+					count: 4
+				}
+				{
+					id: "1E78FB4229C6D645"
+					type: "item"
+					item: "create:copper_ore"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "2x Ore"
+			icon: "tconstruct:smeltery_controller"
+			x: 6.0d
+			y: 0.0d
+			dependencies: [
+				"4EF202C31C3484EC"
+				"11421D52A5D9B5F6"
+			]
+			id: "78BADD70AC1DFB06"
+			tasks: [{
+				id: "3E8498FCA9838355"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+			rewards: [{
+				id: "41BF55CF14BA455C"
+				type: "item"
+				item: "tconstruct:seared_brick"
+				count: 32
+			}]
+		}
+		{
+			title: "Tinkerer"
+			icon: {
+				id: "tconstruct:tinker_station"
+				Count: 1b
+				tag: {
+					texture: "minecraft:oak_planks"
+				}
+			}
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["1FD54B81D0D19A69"]
+			id: "0F86F05AFFB6A618"
+			tasks: [{
+				id: "52579AC4D080A5A8"
+				type: "item"
+				item: "tconstruct:tinker_station"
+			}]
+			rewards: [{
+				id: "7F1B05E0A1A07E57"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 8
+			}]
+		}
+		{
+			title: "Tons o' Grout"
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["0F86F05AFFB6A618"]
+			id: "11421D52A5D9B5F6"
+			tasks: [{
+				id: "6341742C671D23BA"
+				type: "item"
+				item: "tconstruct:grout"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "792581CD1D21245B"
+					type: "item"
+					item: "minecraft:gravel"
+					count: 16
+				}
+				{
+					id: "452FE8D1CAEF30A0"
+					type: "item"
+					item: "minecraft:sand"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Advanced Tinkering"
+			icon: {
+				id: "tconstruct:tinkers_anvil"
+				Count: 1b
+				tag: {
+					texture: "create:brass_block"
+				}
+			}
+			x: 6.0d
+			y: 2.0d
+			dependencies: ["78BADD70AC1DFB06"]
+			id: "212E5D191D99D3EC"
+			tasks: [{
+				id: "005C04020751899A"
+				type: "item"
+				item: "tconstruct:tinkers_anvil"
+			}]
+			rewards: [{
+				id: "33B5A083BA1D9E78"
+				type: "item"
+				item: "minecraft:gold_ore"
+				count: 4
+			}]
+		}
+		{
+			title: "Larger Crafting Table"
+			icon: "create:mechanical_crafter"
+			x: 8.0d
+			y: -2.0d
+			dependencies: ["4EF202C31C3484EC"]
+			id: "015A585EE499ADD0"
+			tasks: [{
+				id: "5BBFD2F1138F30BA"
+				type: "item"
+				item: "create:mechanical_crafter"
+				count: 9L
+			}]
+			rewards: [{
+				id: "771B1F38C7ABBA48"
+				type: "item"
+				item: "create:crafter_slot_cover"
+				count: 4
+			}]
+		}
+		{
+			title: "Infinite Iron"
+			icon: "minecraft:iron_nugget"
+			x: 8.0d
+			y: -4.0d
+			shape: "diamond"
+			dependencies: ["015A585EE499ADD0"]
+			id: "6A9FE2EF8838C8B2"
+			tasks: [
+				{
+					id: "69B36D8C5F9A91C7"
+					type: "item"
+					item: "create:belt_connector"
+					count: 4L
+				}
+				{
+					id: "5C62BCF819161724"
+					type: "item"
+					item: "create:encased_fan"
+				}
+				{
+					id: "41D65C5120517941"
+					type: "item"
+					item: "create:mechanical_drill"
+				}
+			]
+			rewards: [{
+				id: "529E1309C08B80AE"
+				type: "item"
+				item: "cyclic:heart"
+			}]
+		}
+		{
+			title: "wow such nice ingot"
+			icon: "immersiveengineering:ingot_steel"
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["78BADD70AC1DFB06"]
+			id: "7AF9E884DA055E3F"
+			tasks: [{
+				id: "2CCFFF4A4AC654EC"
+				type: "item"
+				item: "immersiveengineering:ingot_steel"
+				count: 4L
+			}]
+			rewards: [{
+				id: "29C422FBE6F61289"
+				type: "item"
+				item: "immersiveengineering:ingot_steel"
+				count: 4
+			}]
+		}
+		{
+			title: "2+6/9x Ore"
+			icon: "tconstruct:foundry_controller"
+			x: 8.0d
+			y: 2.0d
+			shape: "diamond"
+			dependencies: ["78BADD70AC1DFB06"]
+			optional: true
+			id: "36FD2F9F19C01260"
+			tasks: [
+				{
+					id: "594BAC8A1DEE364C"
+					type: "item"
+					item: "tconstruct:foundry_controller"
+				}
+				{
+					id: "1F78053C689C947B"
+					type: "item"
+					item: "tconstruct:scorched_bricks"
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "11B59B62DE7D289F"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "7A7E38460D12A0E9"
+					type: "item"
+					item: "minecraft:iron_ore"
+					count: 3
+				}
+			]
+		}
+		{
+			title: "Oredictify"
+			icon: "mekanism:oredictionificator"
+			x: 6.0d
+			y: -4.0d
+			shape: "rsquare"
+			dependencies: ["4EF202C31C3484EC"]
+			optional: true
+			id: "3371677FE8056AB6"
+			tasks: [{
+				id: "54DE63D41B7F8E80"
+				type: "item"
+				item: "mekanism:oredictionificator"
+			}]
+			rewards: [
+				{
+					id: "69FE5B6020B6488C"
+					type: "item"
+					item: "mekanism:ingot_copper"
+					count: 2
+				}
+				{
+					id: "659C01713A333514"
+					type: "item"
+					item: "tconstruct:copper_ingot"
+					count: 2
+				}
+				{
+					id: "074E7D5975303F10"
+					type: "item"
+					item: "immersiveengineering:ingot_copper"
+					count: 2
+				}
+				{
+					id: "7CD132137F5942DA"
+					type: "item"
+					item: "create:copper_ingot"
+					count: 2
+				}
+				{
+					id: "448453DCBEB947B3"
+					type: "item"
+					item: "projectred-core:copper_ingot"
+					count: 2
+				}
+			]
+		}
+		{
+			title: "Handy"
+			icon: "create:deployer"
+			x: 10.0d
+			y: 0.0d
+			subtitle: "(get it cuz hand)"
+			dependencies: ["7AF9E884DA055E3F"]
+			id: "6CB124E5FC714A58"
+			tasks: [{
+				id: "3CAE10483B1B37E2"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "55F75D59BFBF4498"
+				type: "item"
+				item: "immersiveengineering:ingot_steel"
+				count: 8
+			}]
+		}
+		{
+			title: "Knowledge"
+			icon: "minecraft:writable_book"
+			x: -2.0d
+			y: 1.5d
+			shape: "rsquare"
+			dependencies: ["1FD54B81D0D19A69"]
+			optional: true
+			id: "21CAD54AC56D08FF"
+			tasks: [{
+				id: "6C99A70D1F1A2C7F"
+				type: "checkmark"
+				title: "Knowledge"
+			}]
+			rewards: [
+				{
+					id: "1C7077FD6FE0BA12"
+					type: "item"
+					item: "tconstruct:puny_smelting"
+				}
+				{
+					id: "1168E77635D64987"
+					type: "item"
+					item: "tconstruct:mighty_smelting"
+				}
+				{
+					id: "0B6C2BED3644FC17"
+					type: "item"
+					item: "tconstruct:encyclopedia"
+				}
+				{
+					id: "3A1AD7B63E409DE8"
+					type: "item"
+					item: "tconstruct:tinkers_gadgetry"
+				}
+				{
+					id: "28D89DA8D01EF300"
+					type: "item"
+					item: "tconstruct:fantastic_foundry"
+				}
+			]
+		}
+		{
+			title: "Kelp me!"
+			icon: "minecraft:kelp"
+			x: -2.0d
+			y: -1.5d
+			shape: "rsquare"
+			dependencies: ["1FD54B81D0D19A69"]
+			optional: true
+			id: "5746703A7DE9F3A4"
+			tasks: [{
+				id: "6547C4955951CA75"
+				type: "checkmark"
+				title: "Kelp me!"
+			}]
+			rewards: [{
+				id: "7BE41C6B3968FCB4"
+				type: "item"
+				item: "minecraft:kelp"
+				count: 32
+			}]
+		}
+		{
+			icon: {
+				id: "minecraft:player_head"
+				Count: 1b
+				tag: {
+					SkullOwner: {
+						Properties: {
+							textures: [{
+								Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWRhNGEyMTgwY2E1OGZhOTQxNTM4MjY1YjY0ZmU4NWUwNWM0YWYwYjUzY2RmOGRmZjFlYjExZTQ0MWQxZjA3OSJ9fX0="
+							}]
+						}
+						Id: [I;
+							-371093853
+							-1628549285
+							-1892873013
+							1469893264
+						]
+					}
+					display: {
+						Name: "{\"text\":\"Mario\"}"
+					}
+				}
+			}
+			x: -2.0d
+			y: 0.5d
+			shape: "rsquare"
+			description: ["did u know u can wall jump like mario wehee"]
+			dependencies: ["1FD54B81D0D19A69"]
+			optional: true
+			id: "612E88A15691FC05"
+			tasks: [{
+				id: "4327729CA480A880"
+				type: "checkmark"
+				title: "Wall Jump!"
+			}]
+		}
+		{
+			icon: "waystones:waystone"
+			x: -2.0d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["1FD54B81D0D19A69"]
+			optional: true
+			id: "7923E2840CF68603"
+			tasks: [{
+				id: "3D598D356C115A49"
+				type: "checkmark"
+				title: "y walk wen u can tp"
+			}]
+			rewards: [{
+				id: "6CEE12C85CC685B6"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+		}
+		{
+			title: "ELECTRICITY!"
+			icon: "createaddition:alternator"
+			x: 10.0d
+			y: -2.0d
+			shape: "gear"
+			dependencies: [
+				"6CB124E5FC714A58"
+				"015A585EE499ADD0"
+			]
+			size: 1.5d
+			id: "3AA60EF189628C92"
+			tasks: [{
+				id: "2399F4E5567E89A8"
+				type: "item"
+				item: "createaddition:alternator"
+			}]
+			rewards: [{
+				id: "31015DCEE446F40E"
+				type: "item"
+				item: "create:brass_sheet"
+				count: 6
+			}]
+		}
+	]
+}

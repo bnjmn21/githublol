@@ -1,0 +1,58 @@
+type = hud
+
+customization-meta {
+  randomgroup = 1
+  keepaspectratio = false
+  renderorder = background
+  randommode = false
+  randomonlyfirsttime = false
+  backgroundcolor = #000000
+}
+
+customization {
+  visible = false
+  x = -18
+  action = editlogo
+  y = -94
+}
+
+customization {
+  x = 0
+  action = editprogressbar
+  y = 0
+}
+
+customization {
+  x = 9
+  action = editforgestatustext
+  y = -14
+}
+
+customization {
+  x = 9
+  action = editforgememoryinfo
+  y = 14
+}
+
+customization {
+  orientation = top-left
+  name = cool_slideshow
+  x = 0
+  width = %guiwidth%
+  actionid = 8a6a727a-11e5-4d57-9faa-923a65bb174b1667255113976
+  action = addslideshow
+  y = 0
+  height = %guiheight%
+}
+
+customization {
+  path = loading_screen/mojangstudios.png
+  orientation = top-right
+  x = -9
+  width = 200
+  action = addtexture
+  actionid = 6eeff7ba-f5c4-4108-8bc9-1d6af30d591c1667243363737
+  y = 4
+  height = 51
+}
+

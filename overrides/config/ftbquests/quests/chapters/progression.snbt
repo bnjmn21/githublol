@@ -1,0 +1,128 @@
+{
+	id: "3C94A50FBB4BF720"
+	group: ""
+	order_index: 0
+	filename: "progression"
+	title: "Progression"
+	icon: "mekanism:robit"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Welcome to Robocraft"
+			icon: "minecraft:grass_block"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "This is where it all begins!"
+			description: [
+				"Welcome to Robocraft!"
+				"This Modpack is about automation"
+				"and becoming literal god."
+				"Have fun!"
+				""
+			]
+			hide: false
+			size: 2.0d
+			id: "5C7BD52B8EAD7AF2"
+			tasks: [{
+				id: "24400A7FB01B337E"
+				type: "checkmark"
+				title: "Welcome to Robocraft"
+			}]
+		}
+		{
+			title: "Kinetic Energy"
+			icon: "create:large_cogwheel"
+			x: 2.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Who needs Electricity anyways?"
+			hide_dependency_lines: false
+			dependencies: ["5C7BD52B8EAD7AF2"]
+			size: 1.5d
+			id: "7CD9683C78F30D80"
+			tasks: [{
+				id: "7F8E60E5C772578F"
+				type: "checkmark"
+				title: "Kinetic Energy"
+			}]
+		}
+		{
+			title: "Low Voltage"
+			icon: "mekanism:alloy_infused"
+			x: 4.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Finally! moving subatomic particles wow"
+			dependencies: [
+				"7CD9683C78F30D80"
+				"3AA60EF189628C92"
+			]
+			size: 1.5d
+			id: "10E80BFBDB75920F"
+			tasks: [{
+				id: "5A4002ABDC18E9DC"
+				type: "checkmark"
+				title: "Low Voltage"
+			}]
+		}
+		{
+			title: "Medium Voltage"
+			icon: "mekanism:alloy_reinforced"
+			x: 6.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Power is cool, but more power is even cooler"
+			dependencies: [
+				"10E80BFBDB75920F"
+				"31A1C91F653C28C8"
+			]
+			size: 1.5d
+			id: "44055ACCD104DFA3"
+			tasks: [{
+				id: "46589E9454B4E462"
+				type: "checkmark"
+				title: "Medium Voltage"
+			}]
+		}
+		{
+			title: "High Voltage"
+			icon: "mekanism:alloy_atomic"
+			x: 8.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "We're getting somewhere"
+			dependencies: [
+				"44055ACCD104DFA3"
+				"45FB9F88D02F6FB9"
+			]
+			size: 1.5d
+			id: "3C183FA7BCD3E42A"
+			tasks: [{
+				id: "331ECD79055D0564"
+				type: "checkmark"
+				title: "High Voltage"
+			}]
+		}
+		{
+			title: "Extreme Voltage"
+			icon: "mekanism:pellet_antimatter"
+			x: 10.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Energy's Final Form"
+			dependencies: [
+				"3C183FA7BCD3E42A"
+				"4ADFAE1C16CE03CE"
+			]
+			size: 1.5d
+			id: "6D7DD437D91D0903"
+			tasks: [{
+				id: "222F6D09654B2B7D"
+				type: "checkmark"
+				title: "Extreme Voltage"
+			}]
+		}
+	]
+}

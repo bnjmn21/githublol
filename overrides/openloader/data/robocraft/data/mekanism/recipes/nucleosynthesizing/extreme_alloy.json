@@ -1,0 +1,9 @@
+{
+	"type":"mekanism:nucleosynthesizing",
+	"itemInput":{
+		"ingredient":{"item":"mekanism:alloy_atomic"}
+	},
+	"gasInput":{"amount":50,"gas":"mekanism:antimatter"},
+	"output":{"item":"contenttweaker:extreme_alloy"},
+	"duration":200
+}

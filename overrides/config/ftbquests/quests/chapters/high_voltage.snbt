@@ -1,0 +1,1158 @@
+{
+	id: "3365588369C38330"
+	group: "0AE8F83664DC04A0"
+	order_index: 3
+	filename: "high_voltage"
+	title: "High Voltage"
+	icon: "mekanism:alloy_atomic"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "High Voltage"
+			icon: "mekanism:alloy_atomic"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "We're getting somewhere"
+			dependencies: ["3C183FA7BCD3E42A"]
+			size: 1.5d
+			id: "36AD2E4BBB4BAAAC"
+			tasks: [{
+				id: "59E0788F6F601896"
+				type: "item"
+				item: "contenttweaker:tiny_polonium_nugget"
+			}]
+			rewards: [{
+				id: "432ABDDD112E5E92"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Wireless Energy Transfer"
+			icon: "fluxnetworks:flux_core"
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["36AD2E4BBB4BAAAC"]
+			id: "0195641C2811DCA4"
+			tasks: [{
+				id: "30491A83DCCBD5E3"
+				type: "item"
+				item: "fluxnetworks:flux_core"
+				count: 4L
+			}]
+			rewards: [{
+				id: "5CCEF9FAB48FE711"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "server-side"
+			x: -2.0d
+			y: -2.0d
+			dependencies: ["0195641C2811DCA4"]
+			id: "797DB3A4039A62AA"
+			tasks: [{
+				id: "131BE18DF9914F5B"
+				type: "item"
+				item: "fluxnetworks:flux_plug"
+			}]
+			rewards: [{
+				id: "36834774614FE900"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "client-side"
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["0195641C2811DCA4"]
+			id: "4646A748BA8D8DE5"
+			tasks: [{
+				id: "170258D3AAC3E9CB"
+				type: "item"
+				item: "fluxnetworks:flux_point"
+			}]
+			rewards: [{
+				id: "1B9CABAF9C9C14A5"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Charge my items, please!"
+			x: 0.0d
+			y: -4.0d
+			dependencies: ["0195641C2811DCA4"]
+			id: "56E999D084B25802"
+			tasks: [{
+				id: "5E88494E5D0322D1"
+				type: "item"
+				item: "fluxnetworks:flux_controller"
+			}]
+			rewards: [{
+				id: "6DCC9367F970E383"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Back to Stone Age"
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["36AD2E4BBB4BAAAC"]
+			id: "3F294F0119E10E29"
+			tasks: [{
+				id: "13A5D41E621A28B0"
+				type: "item"
+				item: "immersiveengineering:alloybrick"
+				count: 8L
+			}]
+			rewards: [{
+				id: "403FD1F335CEE4F6"
+				type: "choice"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Industrialization!"
+			icon: "immersiveengineering:crusher"
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["3F294F0119E10E29"]
+			id: "27D8E5B58DBC8040"
+			tasks: [
+				{
+					id: "5754352FD409D38D"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "51B03E465EAC3304"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "67721DA76E988005"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "2843C6CBBCBE9421"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 8L
+				}
+				{
+					id: "2C72220ACDCDAE94"
+					type: "item"
+					item: "minecraft:hopper"
+					count: 9L
+				}
+			]
+			rewards: [{
+				id: "7AF87928510391D7"
+				type: "choice"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "sheeesh"
+			icon: "immersiveengineering:arc_furnace"
+			x: 4.0d
+			y: 2.0d
+			shape: "diamond"
+			dependencies: ["076F2521D61824ED"]
+			id: "5C419256CFCDB4E1"
+			tasks: [
+				{
+					id: "1777A7573882BD6E"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 8L
+				}
+				{
+					id: "080D9D6F3F0E3FAC"
+					type: "item"
+					item: "mekanism:block_steel"
+					count: 6L
+				}
+				{
+					id: "4566FA027D9D01C2"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_steel"
+					count: 14L
+				}
+				{
+					id: "32B87B5280C6CD09"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "690A6B4CC5852A7B"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 5L
+				}
+				{
+					id: "0768E76E66EF537F"
+					type: "item"
+					item: "minecraft:cauldron"
+				}
+				{
+					id: "09C2472211EEF10A"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "47958B26C3389BAE"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "1896C21549B246A4"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+				{
+					id: "00D3D2EFAED10AF1"
+					type: "item"
+					item: {
+						id: "immersiveengineering:graphite_electrode"
+						Count: 1b
+						tag: {
+							graphDmg: 0
+						}
+					}
+					count: 3L
+				}
+			]
+			rewards: [
+				{
+					id: "163C093540FE404B"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "3468FA1861BCB1AB"
+					type: "choice"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "01C2252C3351B591"
+					type: "choice"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "i love immersive engineering"
+			icon: "immersiveengineering:ingot_electrum"
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["5C419256CFCDB4E1"]
+			id: "48CC1D09EFD8A8BA"
+			tasks: [{
+				id: "5E4EB5BACAE6A98D"
+				type: "item"
+				item: "immersiveengineering:ingot_electrum"
+			}]
+			rewards: [{
+				id: "556D35491E336F28"
+				type: "choice"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "yeee haaaw!"
+			icon: {
+				id: "immersiveengineering:railgun"
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						Size: 3
+						Items: [ ]
+					}
+				}
+			}
+			x: 6.0d
+			y: 2.0d
+			shape: "diamond"
+			dependencies: ["48CC1D09EFD8A8BA"]
+			id: "5A63F800704C8956"
+			tasks: [
+				{
+					id: "5685823F0023016E"
+					type: "item"
+					item: {
+						id: "immersiveengineering:railgun"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Size: 3
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "371FCBF2CF607554"
+					type: "item"
+					item: "immersiveengineering:stick_iron"
+					count: 16L
+				}
+				{
+					id: "5111509E1D311247"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_railgun_capacitors"
+				}
+				{
+					id: "0291B19C3BDEFC86"
+					type: "item"
+					item: "immersiveengineering:toolupgrade_railgun_scope"
+				}
+				{
+					id: "23B6CAC2E6F8D30F"
+					type: "item"
+					item: "immersiveengineering:powerpack"
+				}
+				{
+					id: "3A52F79A6A0404A3"
+					type: "item"
+					icon: {
+						id: "immersiveengineering:shader"
+						Count: 1b
+						tag: {
+							shader_name: "immersiveengineering:rosequartz"
+						}
+					}
+					item: "immersiveengineering:shader"
+				}
+			]
+			rewards: [
+				{
+					id: "4AF1FBDF962516DC"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "4341977BC94C00B8"
+					type: "choice"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "6A047902BB52DBD2"
+					type: "choice"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "i'm not automating this hell naw bro dawg"
+			x: 6.0d
+			y: -2.0d
+			subtitle: "what da dog doin'"
+			description: ["y can't u insert graphite electrode automatically bro wtf ayo dawg no way bro nah bro wot da dog doin' tf kinda sus bro /:"]
+			dependencies: ["48CC1D09EFD8A8BA"]
+			id: "12892827FB17334B"
+			tasks: [{
+				id: "15DE0A53F0D524B9"
+				type: "item"
+				item: "mysticalagriculture:electrum_seeds"
+			}]
+			rewards: [{
+				id: "7D24580CC59F034B"
+				type: "choice"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "More Industrialization!"
+			icon: "immersiveengineering:squeezer"
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["27D8E5B58DBC8040"]
+			id: "076F2521D61824ED"
+			tasks: [
+				{
+					id: "2BAC412BA21EBC52"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "7E72A6884109FDE8"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "17B9350BFBF7272E"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "4AE858632EA6364E"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "4E156D9F8E4A8D23"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 3L
+				}
+				{
+					id: "76AD4FF578A4D38F"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+				{
+					id: "0A2D0D3D14489F93"
+					type: "item"
+					item: "immersiveengineering:wooden_barrel"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "2B5F50DE16940E36"
+				type: "choice"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Inscription"
+			icon: "appliedenergistics2:inscriber"
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["36AD2E4BBB4BAAAC"]
+			id: "4612627A19433341"
+			tasks: [
+				{
+					id: "2C7D490515B13A40"
+					type: "item"
+					item: "appliedenergistics2:inscriber"
+				}
+				{
+					id: "62A84F600BC11F89"
+					type: "item"
+					item: "appliedenergistics2:calculation_processor_press"
+				}
+				{
+					id: "328A9C8B6822C789"
+					type: "item"
+					item: "appliedenergistics2:engineering_processor_press"
+				}
+				{
+					id: "48A49A536829D8CE"
+					type: "item"
+					item: "appliedenergistics2:logic_processor_press"
+				}
+				{
+					id: "2B7D07716D3140A9"
+					type: "item"
+					item: "appliedenergistics2:silicon_press"
+				}
+			]
+			rewards: [{
+				id: "2EF8176495DB8168"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "HELP!!"
+			icon: "appliedenergistics2:inscriber"
+			x: 0.0d
+			y: 2.0d
+			shape: "rsquare"
+			dependencies: ["36AD2E4BBB4BAAAC"]
+			id: "3B17340F9F246874"
+			tasks: [{
+				id: "62C794CF01F23982"
+				type: "item"
+				item: "appliedenergistics2:sky_stone_block"
+				count: 10L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "3126C14152427F90"
+				type: "choice"
+				table_id: 4557353824324625388L
+			}]
+		}
+		{
+			title: "Under Control!"
+			icon: "chisel:futura/controller"
+			x: 4.0d
+			y: 4.0d
+			dependencies: ["4612627A19433341"]
+			id: "170DB9ACE2AC2652"
+			tasks: [{
+				id: "1674088D1B314D40"
+				type: "item"
+				item: "appliedenergistics2:controller"
+			}]
+			rewards: [{
+				id: "0B9DE56951EF5946"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Thicc Cable"
+			icon: "appliedenergistics2:white_smart_dense_cable"
+			x: 2.0d
+			y: 4.0d
+			dependencies: ["170DB9ACE2AC2652"]
+			id: "39708543AE53D07C"
+			tasks: [{
+				id: "199C9514A23BA189"
+				type: "item"
+				item: "appliedenergistics2:fluix_smart_dense_cable"
+			}]
+			rewards: [{
+				id: "0F55E0583CED50E5"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Storing Stuff"
+			icon: "appliedenergistics2:drive"
+			x: 2.0d
+			y: 6.0d
+			dependencies: ["170DB9ACE2AC2652"]
+			id: "03D6B0B967E61ACF"
+			tasks: [
+				{
+					id: "6F4F2E05635EE038"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:1k_storage_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "66E909AC5598BAB5"
+					type: "item"
+					item: "appliedenergistics2:drive"
+				}
+			]
+			rewards: [{
+				id: "4B57E9DA1AF92F23"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Displaying Stuff"
+			icon: "appliedenergistics2:crafting_terminal"
+			x: 4.0d
+			y: 6.0d
+			dependencies: ["170DB9ACE2AC2652"]
+			id: "78C09C19104C0ECC"
+			tasks: [{
+				id: "1A20CA1764E9612B"
+				type: "item"
+				item: "appliedenergistics2:crafting_terminal"
+			}]
+			rewards: [{
+				id: "242C1BFF9EF20AF6"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Lots of Stuff"
+			icon: "appliedenergistics2:storage_bus"
+			x: 6.0d
+			y: 6.0d
+			dependencies: ["170DB9ACE2AC2652"]
+			id: "5F7F9848FB43B32C"
+			tasks: [{
+				id: "2544CC201E521450"
+				type: "item"
+				item: "appliedenergistics2:storage_bus"
+			}]
+			rewards: [{
+				id: "38A1787FB26DD6FC"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Full Automation!"
+			icon: "appliedenergistics2:crafting_unit"
+			x: 6.0d
+			y: 4.0d
+			dependencies: ["170DB9ACE2AC2652"]
+			id: "46117962C11569F6"
+			tasks: [
+				{
+					id: "3904C84458E4EAD7"
+					type: "item"
+					item: "appliedenergistics2:1k_crafting_storage"
+				}
+				{
+					id: "1A185B276DEB4741"
+					type: "item"
+					item: "appliedenergistics2:crafting_unit"
+				}
+			]
+			rewards: [{
+				id: "0134ED62919E145C"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Autocrafting here i come!"
+			icon: "appliedenergistics2:molecular_assembler"
+			x: 8.0d
+			y: 4.0d
+			dependencies: ["46117962C11569F6"]
+			id: "041C3A4C69D273BA"
+			tasks: [{
+				id: "1AA8F0FED9170426"
+				type: "item"
+				item: "appliedenergistics2:molecular_assembler"
+			}]
+			rewards: [{
+				id: "09F2F7FD5C7AE516"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "FASTER"
+			icon: "appliedenergistics2:speed_card"
+			x: 8.0d
+			y: 6.0d
+			dependencies: ["041C3A4C69D273BA"]
+			id: "265F625F801CFAC8"
+			tasks: [{
+				id: "287AE084C422DE13"
+				type: "item"
+				item: "appliedenergistics2:speed_card"
+			}]
+			rewards: [{
+				id: "1AB17BDE8E80629B"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Automate Automate Automate"
+			icon: "appliedenergistics2:interface"
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["46117962C11569F6"]
+			id: "7EAFB432161D6668"
+			tasks: [{
+				id: "1F2FC012325E19A0"
+				type: "item"
+				item: "appliedenergistics2:interface"
+				count: 8L
+			}]
+			rewards: [{
+				id: "2B2F9D5678114C57"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Better Storage"
+			icon: {
+				id: "appliedenergistics2:64k_storage_cell"
+				Count: 1b
+				tag: { }
+			}
+			x: 10.0d
+			y: 2.0d
+			dependencies: [
+				"7EAFB432161D6668"
+				"041C3A4C69D273BA"
+			]
+			id: "62F77315B6114AF3"
+			tasks: [{
+				id: "2EA3C038BBB2B26E"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:64k_storage_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "0B5441902F832C22"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Charging Station"
+			icon: "appliedenergistics2:charger"
+			x: -2.0d
+			y: 2.0d
+			dependencies: ["36AD2E4BBB4BAAAC"]
+			id: "0569DBD4D5725678"
+			tasks: [{
+				id: "7D52C6A3F03A6A0D"
+				type: "item"
+				item: "appliedenergistics2:charger"
+			}]
+		}
+		{
+			title: "Advanced ME"
+			icon: "lazierae2:aggregator"
+			x: 10.0d
+			y: 4.0d
+			dependencies: ["041C3A4C69D273BA"]
+			id: "586AD632A1F8A34F"
+			tasks: [{
+				id: "7EB4D69DFFA827E2"
+				type: "item"
+				item: "lazierae2:aggregator"
+			}]
+			rewards: [{
+				id: "402BB25F872DB32A"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Speculation"
+			icon: "lazierae2:speculative_processor"
+			x: 12.0d
+			y: 4.0d
+			shape: "diamond"
+			dependencies: [
+				"586AD632A1F8A34F"
+				"5406C9DD6812B73A"
+				"12563E50A97C3432"
+			]
+			id: "72EC2B664A3240C3"
+			tasks: [{
+				id: "1F8B838A8E646179"
+				type: "item"
+				item: "lazierae2:speculative_processor"
+			}]
+			rewards: [
+				{
+					id: "0FA434EA04BE78FE"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "35D41108EE287E12"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "34B6E4B9A81B29E4"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "Quarter Million!"
+			icon: "appliedenergistics2:singularity"
+			x: 10.0d
+			y: 6.0d
+			shape: "diamond"
+			dependencies: ["041C3A4C69D273BA"]
+			id: "5406C9DD6812B73A"
+			tasks: [{
+				id: "464054538AD30610"
+				type: "item"
+				item: "appliedenergistics2:singularity"
+			}]
+			rewards: [{
+				id: "21B2040B1503B575"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "EZ circuits!"
+			icon: "lazierae2:etcher"
+			x: 14.0d
+			y: 2.0d
+			dependencies: ["72EC2B664A3240C3"]
+			id: "0A76B13F219F2FA3"
+			tasks: [{
+				id: "26B75D7F329BD054"
+				type: "item"
+				item: "lazierae2:etcher"
+			}]
+			rewards: [{
+				id: "54D158CD4C12C41A"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Wireless stuff thats expensive"
+			icon: "appliedenergistics2:quantum_entangled_singularity"
+			x: 12.0d
+			y: 6.0d
+			shape: "diamond"
+			dependencies: ["5406C9DD6812B73A"]
+			optional: true
+			id: "7E221E5D8A82602B"
+			tasks: [
+				{
+					id: "797A0AEB8C1BA929"
+					type: "item"
+					item: "appliedenergistics2:quantum_link"
+					count: 2L
+				}
+				{
+					id: "6ADED311CB2295E9"
+					type: "item"
+					item: "appliedenergistics2:quantum_ring"
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "2D9BE34C3DDCE2E2"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "027044B530327329"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "79945BD079489EBB"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "Better Crafting"
+			icon: "appliedenergistics2:64k_crafting_storage"
+			x: 12.0d
+			y: 2.0d
+			dependencies: ["62F77315B6114AF3"]
+			id: "12563E50A97C3432"
+			tasks: [{
+				id: "7C921A7E889C0C84"
+				type: "item"
+				item: "appliedenergistics2:64k_crafting_storage"
+			}]
+			rewards: [{
+				id: "52E94E0BC117E96A"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Need. More. Waste. wait wot"
+			icon: "mekanism:pellet_polonium"
+			x: 10.0d
+			y: 0.0d
+			shape: "diamond"
+			dependencies: [
+				"12563E50A97C3432"
+				"2588DCDF1F40A6BC"
+			]
+			id: "22A4FD440C585D0B"
+			tasks: [{
+				id: "64423B26B04341C1"
+				type: "item"
+				item: "mekanismgenerators:fission_reactor_casing"
+				count: 64L
+			}]
+			rewards: [{
+				id: "54088CBFCD692FE1"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Fusion!"
+			icon: "mekanismgenerators:fusion_reactor_controller"
+			x: 8.0d
+			y: 0.0d
+			shape: "diamond"
+			dependencies: [
+				"48CC1D09EFD8A8BA"
+				"22A4FD440C585D0B"
+			]
+			id: "0396319F8FC4305E"
+			tasks: [
+				{
+					id: "7CB91941D7E93B23"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_frame"
+					count: 40L
+				}
+				{
+					id: "257A199338C4D5BB"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_port"
+					count: 4L
+				}
+				{
+					id: "7809470CA881182D"
+					type: "item"
+					item: "mekanismgenerators:laser_focus_matrix"
+				}
+				{
+					id: "3309067C08DF84F7"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_controller"
+				}
+			]
+			rewards: [
+				{
+					id: "35A31F0A7769C4B0"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "2F4E26AC810C00D1"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "66D758DF884799B4"
+					type: "loot"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "SO MUCH ENERGY!!!!!!"
+			icon: "mekanismgenerators:turbine_blade"
+			x: 7.0d
+			y: -2.0d
+			shape: "diamond"
+			dependencies: ["0396319F8FC4305E"]
+			id: "3122ADCD714577B6"
+			tasks: [{
+				id: "6B0F44E8CAD6DC83"
+				type: "item"
+				item: "mekanismgenerators:turbine_casing"
+				count: 500L
+			}]
+			rewards: [
+				{
+					id: "6D76F372E59A4C49"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "2A1E13EFFC60E2E7"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "1EE04393E28FCB79"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "When your average phone charger isn't enough"
+			icon: "mekanism:laser"
+			x: 8.0d
+			y: -2.0d
+			dependencies: ["0396319F8FC4305E"]
+			id: "176658BF58317FB3"
+			tasks: [{
+				id: "2EC2584A62890514"
+				type: "item"
+				item: "mekanism:laser"
+				count: 16L
+			}]
+			rewards: [{
+				id: "1742BE6EE97AEB35"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Store it somewhere"
+			icon: "mekanism:ultimate_induction_cell"
+			x: 9.0d
+			y: -2.0d
+			shape: "diamond"
+			dependencies: ["0396319F8FC4305E"]
+			id: "3BD8E988217FBF4B"
+			tasks: [{
+				id: "0581BDE6E619EB86"
+				type: "item"
+				item: "mekanism:ultimate_induction_cell"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "4DAF8120F00B9B58"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "0F21455C837EFCF7"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "79287876B0DEDB2D"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "WAY TO MUCH POWER!!!!!!!!!!!"
+			icon: "mekanism:pellet_antimatter"
+			x: 8.0d
+			y: -4.0d
+			shape: "gear"
+			dependencies: [
+				"3122ADCD714577B6"
+				"3BD8E988217FBF4B"
+				"176658BF58317FB3"
+				"5B8010B2E2C0902D"
+			]
+			size: 1.5d
+			id: "4ADFAE1C16CE03CE"
+			tasks: [{
+				id: "52EC6B12E46CB4FD"
+				type: "item"
+				item: "extendedcrafting:black_iron_ingot"
+			}]
+			rewards: [{
+				id: "214FA795AEC7541D"
+				type: "item"
+				item: "mekanism:pellet_polonium"
+				count: 5
+			}]
+		}
+		{
+			title: "Uhm i dont think you are supposed to get this!?"
+			icon: "pipez:infinity_upgrade"
+			x: 12.0d
+			y: 0.0d
+			dependencies: ["3C183FA7BCD3E42A"]
+			id: "2588DCDF1F40A6BC"
+			tasks: [{
+				id: "41A8019CE66C12DB"
+				type: "item"
+				item: "pipez:infinity_upgrade"
+			}]
+			rewards: [{
+				id: "39DB87CE72B62841"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Next Gen Armor!"
+			icon: {
+				id: "mekanism:mekasuit_bodyarmor"
+				Count: 1b
+				tag: {
+					HideFlags: 2
+				}
+			}
+			x: 10.0d
+			y: -2.0d
+			shape: "diamond"
+			dependencies: ["22A4FD440C585D0B"]
+			id: "5B8010B2E2C0902D"
+			tasks: [
+				{
+					id: "2E28EA83E2B41F80"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_helmet"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "7592C4B21DD342D1"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_bodyarmor"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "3D463C38D289C696"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_pants"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "70BC57F7BCF66D43"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_boots"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "4ECFCBFDEB300723"
+					type: "item"
+					item: {
+						id: "mekanism:meka_tool"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "04239BE6BA2310CB"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "1D54308675E410CB"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "2FA90A7FA489E291"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,34 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screen.WorldSelectionScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  name = dark
+  action = setbackgroundpanorama
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  showname = true
+  orientation = mid-left
+  crouching = false
+  x = 39
+  slim = false
+  actionid = 0469a5ae-1097-4b58-9256-ff5c72a0d92e1667301844266
+  action = addentity
+  y = 27
+  scale = 30
+  playername = %playername%
+  parrot = false
+}
+

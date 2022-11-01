@@ -1,0 +1,13 @@
+{
+	id: "3F3EF92846A323EC"
+	order_index: 1
+	title: "Inscriber"
+	icon: "appliedenergistics2:inscriber"
+	loot_size: 1
+	rewards: [
+		{ item: "appliedenergistics2:calculation_processor_press" }
+		{ item: "appliedenergistics2:engineering_processor_press" }
+		{ item: "appliedenergistics2:logic_processor_press" }
+		{ item: "appliedenergistics2:silicon_press" }
+	]
+}

@@ -1,0 +1,380 @@
+{
+	id: "2D0AD13CD326553D"
+	group: "0AE8F83664DC04A0"
+	order_index: 1
+	filename: "low_voltage"
+	title: "Low Voltage"
+	icon: "mekanism:alloy_infused"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Low Voltage"
+			icon: "mekanism:alloy_infused"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Finally! moving subatomic particles wow"
+			dependencies: ["10E80BFBDB75920F"]
+			size: 1.5d
+			id: "51D61BDBCD60B46B"
+			tasks: [{
+				id: "69C02A4435DC653E"
+				type: "item"
+				item: "immersiveengineering:workbench"
+			}]
+			rewards: [{
+				id: "6D311A580317908C"
+				type: "item"
+				item: "mekanism:ingot_osmium"
+				count: 8
+			}]
+		}
+		{
+			title: "Metallation Alloyation Machination"
+			icon: "mekanism:metallurgic_infuser"
+			x: 4.0d
+			y: 0.0d
+			subtitle: "Aka THE M.A.M."
+			dependencies: ["5796824B709E6957"]
+			id: "685AC0C513FD7033"
+			tasks: [{
+				id: "0F4D2F8E6DAF696E"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+			rewards: [{
+				id: "6DE8B9727ADF1D47"
+				type: "item"
+				item: "mekanism:alloy_infused"
+				count: 4
+			}]
+		}
+		{
+			title: "Smelteration Machination"
+			icon: "mekanism:energized_smelter"
+			x: 4.0d
+			y: 2.0d
+			shape: "rsquare"
+			dependencies: ["685AC0C513FD7033"]
+			optional: true
+			id: "37FC539E59490641"
+			tasks: [{
+				id: "747CEA85C075F08D"
+				type: "item"
+				item: "mekanism:energized_smelter"
+			}]
+			rewards: [{
+				id: "257CE75B1CE5353F"
+				type: "item"
+				item: "minecraft:porkchop"
+				count: 16
+			}]
+		}
+		{
+			title: "Alloyation Optimization"
+			icon: "mekanism:enrichment_chamber"
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["685AC0C513FD7033"]
+			id: "32FD7596A45F76A6"
+			tasks: [{
+				id: "74E64A6CF398AE1F"
+				type: "item"
+				item: "mekanism:enrichment_chamber"
+			}]
+			rewards: [
+				{
+					id: "3D7A7664E59D18A1"
+					type: "item"
+					item: "minecraft:redstone"
+					count: 4
+				}
+				{
+					id: "2CC64E5220E228C6"
+					type: "item"
+					item: "minecraft:coal"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "You'll need some wires though"
+			icon: "immersiveengineering:wirecoil_copper"
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["51D61BDBCD60B46B"]
+			id: "5796824B709E6957"
+			tasks: [
+				{
+					id: "3E32052023820007"
+					type: "item"
+					item: "immersiveengineering:wirecoil_copper"
+					count: 4L
+				}
+				{
+					id: "2C056E496CA46EFD"
+					type: "item"
+					item: "immersiveengineering:connector_lv"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "61F2F56402A42DD3"
+				type: "item"
+				item: "immersiveengineering:connector_lv_relay"
+				count: 4
+			}]
+		}
+		{
+			title: "Metallation Pulverization"
+			icon: "mekanism:crusher"
+			x: 6.0d
+			y: 1.0d
+			dependencies: ["685AC0C513FD7033"]
+			id: "68F2DE9E8EFCCB18"
+			tasks: [{
+				id: "03EC0874F40935B4"
+				type: "item"
+				item: "mekanism:crusher"
+			}]
+			rewards: [
+				{
+					id: "3DAE2B40EE8B54CE"
+					type: "item"
+					item: "mekanism:ingot_osmium"
+					count: 2
+				}
+				{
+					id: "508AC05631F27EF0"
+					type: "item"
+					item: "minecraft:iron_ingot"
+				}
+				{
+					id: "14CEFBCE1F63FE8F"
+					type: "item"
+					item: "minecraft:gold_ingot"
+				}
+			]
+		}
+		{
+			title: "MORE ENERGY!"
+			icon: "mekanismgenerators:wind_generator"
+			x: 6.0d
+			y: -1.0d
+			dependencies: ["685AC0C513FD7033"]
+			id: "6BF32DD86508BA0F"
+			tasks: [{
+				id: "7A6C20D04295D790"
+				type: "item"
+				item: "mekanismgenerators:wind_generator"
+			}]
+			rewards: [{
+				id: "76F8C8D985BF82B8"
+				type: "item"
+				item: "immersiveengineering:wirecoil_copper"
+				count: 8
+			}]
+		}
+		{
+			title: "funny gas machine"
+			icon: "mekanism:electrolytic_separator"
+			x: 8.0d
+			y: 0.0d
+			dependencies: [
+				"6BF32DD86508BA0F"
+				"68F2DE9E8EFCCB18"
+				"25652075B498F675"
+			]
+			id: "15180C09DBF2F2C4"
+			tasks: [{
+				id: "6440B53248372EF5"
+				type: "item"
+				item: "mekanism:electrolytic_separator"
+			}]
+			rewards: [{
+				id: "142A5155E0F11ECB"
+				type: "item"
+				item: "mekanism:basic_chemical_tank"
+				count: 2
+			}]
+		}
+		{
+			title: "I believe i can flyyyy"
+			icon: {
+				id: "mekanism:jetpack"
+				Count: 1b
+				tag: {
+					HideFlags: 2
+				}
+			}
+			x: 8.0d
+			y: 2.0d
+			dependencies: ["15180C09DBF2F2C4"]
+			id: "13D41D02FFC04976"
+			tasks: [{
+				id: "0B0163284EE48557"
+				type: "item"
+				item: {
+					id: "mekanism:jetpack"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+			rewards: [{
+				id: "4C6DD265F6F12B21"
+				type: "item"
+				item: "cyclic:cloud"
+				count: 8
+			}]
+		}
+		{
+			title: "jetified armor!"
+			icon: {
+				id: "minecraft:diamond_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 10.0d
+			y: 2.0d
+			shape: "diamond"
+			dependencies: ["13D41D02FFC04976"]
+			optional: true
+			id: "00CE0EDC09C73238"
+			tasks: [{
+				id: "65059A29CBBA8E40"
+				type: "item"
+				item: "mekanism:jetpack_armored"
+			}]
+			rewards: [{
+				id: "28191086C8647573"
+				type: "item"
+				item: "cyclic:heart"
+			}]
+		}
+		{
+			title: "ever wanted to create a chemical? Introducing PCR!"
+			icon: "mekanism:pressurized_reaction_chamber"
+			x: 8.0d
+			y: -2.0d
+			dependencies: [
+				"15180C09DBF2F2C4"
+				"32FD7596A45F76A6"
+			]
+			id: "024CDD70C5DE95C3"
+			tasks: [{
+				id: "081600F1192D9DF9"
+				type: "item"
+				item: "mekanism:pressurized_reaction_chamber"
+			}]
+			rewards: [{
+				id: "2C9A681FCBB65C4D"
+				type: "item"
+				item: "mekanism:bio_fuel"
+				count: 32
+			}]
+		}
+		{
+			title: "Introducing HDPE! a futuristic name for plastic"
+			icon: "mekanism:hdpe_sheet"
+			x: 10.0d
+			y: -2.0d
+			dependencies: ["024CDD70C5DE95C3"]
+			id: "10EE673553CD6D80"
+			tasks: [
+				{
+					id: "2ED439ED56F0FC69"
+					type: "item"
+					item: "mekanism:pressurized_reaction_chamber"
+					count: 2L
+				}
+				{
+					id: "30502910F178415A"
+					type: "item"
+					item: "mekanism:rotary_condensentrator"
+				}
+			]
+			rewards: [{
+				id: "5DEF6DF69C03ECDF"
+				type: "item"
+				item: "minecraft:oak_leaves"
+				count: 64
+			}]
+		}
+		{
+			title: "Infinite Water!"
+			x: 6.0d
+			y: 0.0d
+			subtitle: "wtf lol"
+			dependencies: ["10E80BFBDB75920F"]
+			id: "25652075B498F675"
+			tasks: [{
+				id: "1B0267DF771CF894"
+				type: "item"
+				item: "cookingforblockheads:sink"
+			}]
+			rewards: [{
+				id: "5A3C1E6EEE13ED6D"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			title: "Better Cables!"
+			icon: "mekanism:advanced_universal_cable"
+			x: 10.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: ["10EE673553CD6D80"]
+			size: 1.5d
+			id: "31A1C91F653C28C8"
+			tasks: [
+				{
+					id: "2FB6C7D042BB158B"
+					type: "item"
+					item: "mekanism:advanced_universal_cable"
+				}
+				{
+					id: "79CFBEB4467D0AE5"
+					type: "item"
+					item: "immersiveengineering:wirecoil_electrum"
+				}
+			]
+			rewards: [{
+				id: "736F108A9EB5BB37"
+				type: "item"
+				item: "mekanism:alloy_infused"
+				count: 8
+			}]
+		}
+		{
+			title: "Pipez!"
+			icon: "pipez:item_pipe"
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["51D61BDBCD60B46B"]
+			id: "32EF475332411D98"
+			tasks: [
+				{
+					id: "45137AA0D77DD14D"
+					type: "item"
+					item: "pipez:item_pipe"
+				}
+				{
+					id: "248403AB82A492F2"
+					type: "item"
+					item: "pipez:fluid_pipe"
+				}
+			]
+			rewards: [{
+				id: "047458BF5ADDC358"
+				type: "item"
+				item: "pipez:improved_upgrade"
+			}]
+		}
+	]
+}

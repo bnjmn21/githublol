@@ -1,0 +1,1151 @@
+{
+	id: "763763DFB78486F4"
+	group: "0AE8F83664DC04A0"
+	order_index: 2
+	filename: "medium_voltage"
+	title: "Medium Voltage"
+	icon: "mekanism:alloy_reinforced"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Medium Voltage"
+			icon: "mekanism:alloy_reinforced"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Power is cool, but more power is even cooler"
+			description: ["From here on you won't get any specific rewards for completing quests, but rather lootboxes that contain random items."]
+			dependencies: ["44055ACCD104DFA3"]
+			size: 1.5d
+			id: "3DF61C938DA60A92"
+			tasks: [{
+				id: "2D75D21F114BAF25"
+				type: "item"
+				item: "mekanismgenerators:wind_generator"
+				count: 5L
+			}]
+			rewards: [{
+				id: "66141A6EC22B3AFC"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Save Energy"
+			icon: "mekanism:advanced_energy_cube"
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["3DF61C938DA60A92"]
+			id: "4CC246344EE403AE"
+			tasks: [{
+				id: "44202D6BA7D3FFD3"
+				type: "item"
+				item: "mekanism:advanced_energy_cube"
+			}]
+			rewards: [{
+				id: "69250B1FA8DBCC8C"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Smart Automation"
+			icon: "computercraft:computer_normal"
+			x: -2.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "If you know how to code at least"
+			dependencies: ["3DF61C938DA60A92"]
+			optional: true
+			id: "0786DB4DE4DD2578"
+			tasks: [{
+				id: "3ADA64FCD2B0AE2B"
+				type: "item"
+				item: "computercraft:computer_normal"
+			}]
+			rewards: [
+				{
+					id: "1345469168E307F1"
+					type: "item"
+					item: "computercraft:wired_modem"
+					count: 2
+				}
+				{
+					id: "61C77FC761659228"
+					type: "item"
+					item: "computercraft:cable"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Compromise"
+			icon: "mekanism:osmium_compressor"
+			x: 2.0d
+			y: 2.0d
+			dependencies: [
+				"3DF61C938DA60A92"
+				"4CC246344EE403AE"
+			]
+			id: "0D7D3CF0D45C8A3F"
+			tasks: [{
+				id: "2FD5570D09D446DE"
+				type: "item"
+				item: "mekanism:osmium_compressor"
+			}]
+			rewards: [{
+				id: "188B77008E045EB0"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Really Good Alloy"
+			icon: "mekanism:alloy_atomic"
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["4CC246344EE403AE"]
+			id: "7947511276A1BF64"
+			tasks: [{
+				id: "6AB8B52158A8D143"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+			}]
+			rewards: [{
+				id: "00833E6C9DF222A7"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "One for All, All for One"
+			icon: {
+				id: "mekanism:atomic_disassembler"
+				Count: 1b
+				tag: {
+					HideFlags: 2
+				}
+			}
+			x: 4.0d
+			y: 2.0d
+			shape: "diamond"
+			dependencies: [
+				"7947511276A1BF64"
+				"0D7D3CF0D45C8A3F"
+				"4261B645157606D4"
+			]
+			id: "633AAC0D45CBE7D2"
+			tasks: [{
+				id: "64D27A9CE4F6B029"
+				type: "item"
+				item: {
+					id: "mekanism:atomic_disassembler"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "183DD6492352425E"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "16550AA5AC3781F9"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "333DB062638B6B40"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "Spooky Scary Data Model"
+			icon: {
+				id: "hostilenetworks:data_model"
+				Count: 1b
+				tag: {
+					data_model: {
+						id: "hostilenetworks:wither_skeleton"
+					}
+				}
+			}
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["7947511276A1BF64"]
+			id: "608BADD9027758E1"
+			tasks: [
+				{
+					id: "5F7A8F504DC1678A"
+					type: "item"
+					item: "hostilenetworks:deep_learner"
+				}
+				{
+					id: "2862BED3F8C9DDBD"
+					type: "item"
+					item: {
+						id: "hostilenetworks:data_model"
+						Count: 1b
+						tag: {
+							data_model: {
+								id: "hostilenetworks:wither_skeleton"
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "55D7F954B137F5FC"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "RTX 3090 Ti"
+			icon: "hostilenetworks:sim_chamber"
+			x: 3.0d
+			y: -2.0d
+			subtitle: "Not Sponsored"
+			dependencies: ["608BADD9027758E1"]
+			id: "72DE71E1E70AF255"
+			tasks: [{
+				id: "6AD4706DB73D9D36"
+				type: "item"
+				item: "hostilenetworks:sim_chamber"
+			}]
+			rewards: [{
+				id: "58415E4BE81F309F"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "RTX 4090 Ti"
+			icon: "hostilenetworks:loot_fabricator"
+			x: 3.0d
+			y: -4.0d
+			subtitle: "H0LY $H1T"
+			dependencies: ["72DE71E1E70AF255"]
+			id: "0E6CAD3F9CB4DAAA"
+			tasks: [{
+				id: "662C1FA1D64ADDC6"
+				type: "item"
+				item: "hostilenetworks:loot_fabricator"
+			}]
+			rewards: [{
+				id: "1555FBBBF3E07039"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "RTX 5090 Ti"
+			icon: "minecraft:nether_star"
+			x: 4.0d
+			y: -4.0d
+			subtitle: "When 5 AIO coolers are not enough"
+			dependencies: ["0E6CAD3F9CB4DAAA"]
+			id: "3D7088B5965695CE"
+			tasks: [
+				{
+					id: "2E47BE457A9E4AC0"
+					type: "item"
+					item: {
+						id: "hostilenetworks:data_model"
+						Count: 1b
+						tag: {
+							data_model: {
+								id: "hostilenetworks:wither"
+							}
+						}
+					}
+				}
+				{
+					id: "2F2A567B5DC4577D"
+					type: "item"
+					item: "mob_grinding_utils:tinted_glass"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "76F86C40BD9AB792"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Supreme"
+			icon: "mysticalagriculture:supremium_essence"
+			x: 5.0d
+			y: -4.0d
+			dependencies: ["3D7088B5965695CE"]
+			id: "0F6079D8F909E3D2"
+			tasks: [{
+				id: "5BCB3E9D6D7414FE"
+				type: "item"
+				item: "mysticalagriculture:supremium_essence"
+				count: 8L
+			}]
+			rewards: [{
+				id: "6C1260D69BC627B0"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Infinite Everything"
+			icon: "extendedcrafting:ultimate_singularity"
+			x: 7.0d
+			y: -4.0d
+			shape: "diamond"
+			dependencies: ["0F6079D8F909E3D2"]
+			id: "6BE340D01AFDF71B"
+			tasks: [
+				{
+					id: "51401DF4F9140A33"
+					type: "item"
+					item: "create:mechanical_harvester"
+					count: 2L
+				}
+				{
+					id: "24C53C69F8561409"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+				{
+					id: "64D335388609F6FA"
+					type: "item"
+					item: "create:white_sail"
+					count: 16L
+				}
+				{
+					id: "3AC670C00F903EBF"
+					type: "item"
+					item: "mysticalagriculture:inferium_growth_accelerator"
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "1A3577A59F92E707"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "4E17BB647958C294"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "486F410470FFDF64"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "More Supreme!"
+			icon: {
+				id: "mysticalagriculture:supremium_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 7.0d
+			y: -5.0d
+			shape: "diamond"
+			dependencies: ["0F6079D8F909E3D2"]
+			id: "5BEBAEE26B86512E"
+			tasks: [
+				{
+					id: "3C2FBBB2A2171A48"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:supremium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "22A5006000199461"
+					type: "item"
+					item: "mysticalagriculture:flight_augment"
+				}
+				{
+					id: "6FFBD1D3D2045F6E"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:supremium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "43F3AA295D92F17A"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:supremium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5AEFB7FCD110264C"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:supremium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "3105254DC993B45A"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "6EE4AB5E62EC50B8"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "2F68CDF14C518905"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "Attack!"
+			x: 7.0d
+			y: -3.0d
+			dependencies: ["0F6079D8F909E3D2"]
+			id: "40C7AF0331064F5D"
+			tasks: [{
+				id: "75E6B6E81D7FDBBC"
+				type: "item"
+				item: "mysticalagriculture:supremium_sword"
+			}]
+			rewards: [{
+				id: "73407DD2C4963EDE"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "PSI!"
+			icon: "psi:psidust"
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["3DF61C938DA60A92"]
+			id: "7289D98BBC13A561"
+			tasks: [{
+				id: "60BE02FB75930B84"
+				type: "item"
+				item: "psi:psidust"
+			}]
+			rewards: [{
+				id: "65177407094B56EE"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Spellcoding"
+			icon: "psi:programmer"
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["7289D98BBC13A561"]
+			id: "4261B645157606D4"
+			tasks: [
+				{
+					id: "5C8B5B228FB5B4D6"
+					type: "item"
+					item: "psi:programmer"
+				}
+				{
+					id: "46812F503CF58A96"
+					type: "item"
+					item: {
+						id: "psi:spell_bullet"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "0C25B59EC70797B2"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "PSI ARMOR!!!"
+			icon: {
+				id: "psi:psimetal_exosuit_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 4.0d
+			y: 3.0d
+			shape: "diamond"
+			dependencies: ["4261B645157606D4"]
+			id: "0063A4D62CD8AE22"
+			tasks: [
+				{
+					id: "74F90C43A0F96E53"
+					type: "item"
+					item: {
+						id: "psi:psimetal_exosuit_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "20EAB8521B173D65"
+					type: "item"
+					item: {
+						id: "psi:psimetal_exosuit_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4E7D61A0FE974694"
+					type: "item"
+					item: {
+						id: "psi:psimetal_exosuit_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2171F971A0FFAEB5"
+					type: "item"
+					item: {
+						id: "psi:psimetal_exosuit_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "200B03C0B38616E2"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "31CEC7AE5D4E26A9"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "54AD48EA5019D964"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "RGB GAMING SPELLS!"
+			icon: "psi:cad_colorizer_rainbow"
+			x: 4.0d
+			y: 4.0d
+			shape: "rsquare"
+			dependencies: ["4261B645157606D4"]
+			optional: true
+			id: "6BA871AD9388CD89"
+			tasks: [{
+				id: "44818E5BE6655BCD"
+				type: "item"
+				item: "psi:cad_colorizer_rainbow"
+			}]
+			rewards: [{
+				id: "129111C62678774D"
+				type: "item"
+				item: "psi:cad_assembly_psimetal"
+			}]
+		}
+		{
+			title: "3x Ore"
+			icon: "mekanism:purification_chamber"
+			x: 2.0d
+			y: -2.0d
+			shape: "diamond"
+			dependencies: ["4CC246344EE403AE"]
+			id: "4730310BAB9EA3BF"
+			tasks: [
+				{
+					id: "1A5B3D9D77EE7CFA"
+					type: "item"
+					item: "mekanism:purification_chamber"
+				}
+				{
+					id: "6C93DDB495F1A1C0"
+					type: "item"
+					item: "mekanism:crusher"
+				}
+				{
+					id: "4D21392DC98923CF"
+					type: "item"
+					item: "mekanism:enrichment_chamber"
+				}
+				{
+					id: "2FC8373186F933A0"
+					type: "item"
+					item: "mekanism:energized_smelter"
+				}
+			]
+			rewards: [
+				{
+					id: "60481195B748975F"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "60DBBA8AC236496A"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "7F101D66B22798AA"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "This thing is so massive"
+			icon: "mekanismgenerators:turbine_blade"
+			x: 6.0d
+			y: -1.0d
+			shape: "diamond"
+			dependencies: ["7947511276A1BF64"]
+			id: "37B60939F6DD9928"
+			tasks: [
+				{
+					id: "45A33B325FC22E5E"
+					type: "item"
+					item: "mekanismgenerators:turbine_casing"
+					count: 32L
+				}
+				{
+					id: "063157CB294EA5C9"
+					type: "item"
+					item: "mekanismgenerators:turbine_blade"
+					count: 4L
+				}
+				{
+					id: "4159F2DE2668C2CB"
+					type: "item"
+					item: "mekanismgenerators:turbine_rotor"
+					count: 4L
+				}
+				{
+					id: "69A75648402CDF3B"
+					type: "item"
+					item: "mekanismgenerators:turbine_vent"
+					count: 16L
+				}
+				{
+					id: "7C8E072303B90327"
+					type: "item"
+					item: "mekanismgenerators:saturating_condenser"
+					count: 4L
+				}
+				{
+					id: "29D6FE2C144E8DCC"
+					type: "item"
+					item: "mekanism:structural_glass"
+					count: 32L
+				}
+				{
+					id: "6192A806C0DC800F"
+					type: "item"
+					item: "mekanismgenerators:rotational_complex"
+				}
+				{
+					id: "6E3C30E5115D0509"
+					type: "item"
+					item: "mekanismgenerators:electromagnetic_coil"
+					count: 9L
+				}
+				{
+					id: "63C8C752F2A6027A"
+					type: "item"
+					item: "mekanism:pressure_disperser"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "761763E15921378F"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "162C8C545A7DEE31"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "474938EE5310411E"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "Hope it doesn't explode"
+			icon: "mekanismgenerators:fission_fuel_assembly"
+			x: 6.0d
+			y: 1.0d
+			shape: "diamond"
+			dependencies: ["7947511276A1BF64"]
+			id: "2A5FBFDFE68DD77D"
+			tasks: [
+				{
+					id: "5A491E6F0F69A09E"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_casing"
+					count: 16L
+				}
+				{
+					id: "54DF8B68B7DCBFDF"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_port"
+					count: 4L
+				}
+				{
+					id: "4659CE9779DADE6E"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+					count: 8L
+				}
+				{
+					id: "6E4B6F6A7A4CAF8A"
+					type: "item"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					count: 4L
+				}
+				{
+					id: "542E49C9755EF1EA"
+					type: "item"
+					item: "mekanismgenerators:control_rod_assembly"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "2181EB9EACCC65BC"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "3971A788714D4783"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "4363DB983BE8CCB0"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "Piping \\& Wiring"
+			icon: "immersiveengineering:wirecoil_steel"
+			x: 6.0d
+			y: 0.0d
+			shape: "diamond"
+			dependencies: ["7947511276A1BF64"]
+			id: "54A6A5CFB462EDEC"
+			tasks: [
+				{
+					id: "45F7928A43804CF4"
+					type: "item"
+					item: "immersiveengineering:wirecoil_steel"
+					count: 8L
+				}
+				{
+					id: "0956D3F2DAAEC61B"
+					type: "item"
+					item: "mekanism:ultimate_mechanical_pipe"
+					count: 16L
+				}
+				{
+					id: "3C3F126F014B17CE"
+					type: "item"
+					item: "mekanism:ultimate_pressurized_tube"
+					count: 8L
+				}
+				{
+					id: "62F41288587D6A89"
+					type: "item"
+					item: "cyclic:trash"
+				}
+				{
+					id: "0D9B2DAC841ADEFB"
+					type: "item"
+					item: "cookingforblockheads:sink"
+				}
+			]
+			rewards: [
+				{
+					id: "03A006374466AAD4"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "6419DE83896C6506"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "48303C0D424AC1E0"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "Actually make sure it doesn't explode"
+			icon: "mekanism:ingot_uranium"
+			x: 8.0d
+			y: 0.0d
+			shape: "diamond"
+			dependencies: [
+				"2A5FBFDFE68DD77D"
+				"54A6A5CFB462EDEC"
+				"37B60939F6DD9928"
+			]
+			id: "216CF0A957F1E81C"
+			tasks: [
+				{
+					id: "264BEC45F5873075"
+					type: "item"
+					item: "mekanism:yellow_cake_uranium"
+					count: 16L
+				}
+				{
+					id: "46F5B42057B35256"
+					type: "item"
+					item: "mekanism:fluorite_gem"
+					count: 16L
+				}
+				{
+					id: "3E8795DB41A7355F"
+					type: "item"
+					item: "mekanism:dust_sulfur"
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "4FBF8EF92ACF93BF"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "09A56367882F9D45"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "0CE25F9DD429754C"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+		{
+			title: "REALLY DON'T MAKE IT EXPLODE"
+			icon: {
+				id: "mekanism:hazmat_gown"
+				Count: 1b
+				tag: {
+					HideFlags: 2
+				}
+			}
+			x: 8.0d
+			y: -2.0d
+			dependencies: ["216CF0A957F1E81C"]
+			id: "682D88DEDDC14475"
+			tasks: [
+				{
+					id: "4FAD764364792920"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_logic_adapter"
+					count: 2L
+				}
+				{
+					id: "6E4132E4165BC1FD"
+					type: "item"
+					item: "minecraft:redstone"
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "18C5CB99F9D81D8A"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_mask"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "3F02C1FCFE0DE26F"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_gown"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "1B3FCE4C8CCC98BD"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_pants"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "570B7DB00755D71D"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_boots"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "OR ELSE YOU'LL DIE"
+			x: 9.0d
+			y: -2.0d
+			shape: "diamond"
+			dependencies: ["682D88DEDDC14475"]
+			id: "03695100DC2C4040"
+			tasks: [{
+				id: "7C13E418C0939999"
+				type: "item"
+				item: "mekanism:geiger_counter"
+			}]
+		}
+		{
+			title: "(probably)"
+			x: 10.0d
+			y: -2.0d
+			shape: "pentagon"
+			dependencies: ["03695100DC2C4040"]
+			id: "69CF30D8953F249F"
+			tasks: [{
+				id: "01ADBC1A7182606C"
+				type: "item"
+				item: "mekanism:dosimeter"
+			}]
+		}
+		{
+			icon: "mekanism:radioactive_waste_barrel"
+			x: 11.0d
+			y: -2.0d
+			shape: "hexagon"
+			dependencies: ["69CF30D8953F249F"]
+			id: "3DEC8959BDB72907"
+			tasks: [{
+				id: "7ABDF2317FFC13FE"
+				type: "checkmark"
+				title: "UNDERSTOOD?!"
+			}]
+			rewards: [{
+				id: "4C5BDD1AB3BAF2EA"
+				type: "item"
+				item: "mekanism:nugget_uranium"
+			}]
+		}
+		{
+			title: "Running Reactor"
+			icon: "mekanism:pellet_polonium"
+			x: 10.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: ["216CF0A957F1E81C"]
+			size: 1.5d
+			id: "45FB9F88D02F6FB9"
+			tasks: [{
+				id: "5059B9388F510277"
+				type: "item"
+				item: "mekanism:pellet_polonium"
+			}]
+		}
+		{
+			title: "Smarter Automation"
+			icon: "rftoolscontrol:programmer"
+			x: -4.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "If you don't know how to code at least"
+			dependencies: ["0786DB4DE4DD2578"]
+			optional: true
+			id: "1AA4E717A6132697"
+			tasks: [{
+				id: "031329D3D6A7011E"
+				type: "item"
+				item: "rftoolscontrol:programmer"
+			}]
+			rewards: [{
+				id: "2ED3C4A0F91B6D60"
+				type: "item"
+				item: "rftoolscontrol:processor"
+			}]
+		}
+		{
+			title: "Cobblestone machine"
+			icon: "industrialforegoing:machine_frame_pity"
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["3DF61C938DA60A92"]
+			id: "636D87ABE1A44000"
+			tasks: [{
+				id: "54CBB1B55E3130FF"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+			rewards: [{
+				id: "25AD93B37825EACE"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "looks bad"
+			icon: "industrialforegoing:machine_frame_simple"
+			x: 0.0d
+			y: -4.0d
+			dependencies: ["636D87ABE1A44000"]
+			id: "3F836767EBD5B795"
+			tasks: [{
+				id: "249BEB5208A103C9"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+			rewards: [{
+				id: "2C2CA49570A599A4"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "Okay, okay, not too bad"
+			icon: "industrialforegoing:machine_frame_advanced"
+			x: 2.0d
+			y: -6.0d
+			dependencies: ["3F836767EBD5B795"]
+			id: "1C41B27B1E38AB2B"
+			tasks: [{
+				id: "10890208977F94BE"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+			}]
+			rewards: [{
+				id: "619B18DB814E5B11"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "now that's pretty cool"
+			icon: "industrialforegoing:machine_frame_supreme"
+			x: 4.0d
+			y: -6.0d
+			dependencies: [
+				"1C41B27B1E38AB2B"
+				"3D7088B5965695CE"
+			]
+			id: "1EC35FED4A62E5E4"
+			tasks: [{
+				id: "12ACD7CA7ABAA696"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+			rewards: [{
+				id: "335E6559C33147FA"
+				type: "random"
+				table_id: 6016076878677483401L
+			}]
+		}
+		{
+			title: "WTF!!!!"
+			icon: "industrialforegoing:supreme_black_hole_unit"
+			x: 6.0d
+			y: -6.0d
+			shape: "diamond"
+			dependencies: ["1EC35FED4A62E5E4"]
+			id: "194598C722628FE4"
+			tasks: [{
+				id: "0643AC034635105C"
+				type: "item"
+				item: "industrialforegoing:supreme_black_hole_unit"
+			}]
+			rewards: [
+				{
+					id: "4FE5AD45FEF99E96"
+					type: "item"
+					item: "cyclic:heart"
+				}
+				{
+					id: "5420E277AE0E55A0"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+				{
+					id: "68F94AA48A6A616F"
+					type: "random"
+					table_id: 6016076878677483401L
+				}
+			]
+		}
+	]
+}

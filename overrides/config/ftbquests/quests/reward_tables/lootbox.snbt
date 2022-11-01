@@ -1,0 +1,152 @@
+{
+	id: "537D660BEF031F89"
+	order_index: 0
+	title: "Lootbox"
+	icon: "minecraft:nether_star"
+	loot_size: 1
+	hide_tooltip: true
+	use_title: true
+	rewards: [
+		{ item: "minecraft:iron_ore", count: 8 }
+		{ item: "mekanism:copper_ore", count: 8 }
+		{ item: "mekanism:osmium_ore", count: 8 }
+		{ item: "minecraft:gold_ore", count: 8 }
+		{ item: "minecraft:diamond_ore", count: 2 }
+		{ item: "minecraft:ancient_debris" }
+		{ item: "minecraft:nether_star" }
+		{ item: "apotheosis:diamond_mining_arrow" }
+		{ item: "mekanism:teleportation_core" }
+		{ item: "mekanism:alloy_infused", count: 16 }
+		{ item: "mekanism:alloy_reinforced", count: 8 }
+		{ item: "mekanism:alloy_atomic", count: 4 }
+		{ item: "mysticalagriculture:supremium_essence", count: 4 }
+		{ item: "mysticalagriculture:coral_essence", count: 16 }
+		{ item: "mysticalagriculture:honey_essence", count: 8 }
+		{ item: "mysticalagriculture:enderman_essence", count: 6 }
+		{ item: "biomesoplenty:rainbow_birch_sapling" }
+		{ item: "waystones:waystone" }
+		{
+			item: {
+				id: "industrialforegoing:range_addon2"
+				Count: 1b
+				tag: {
+					TitaniumAugment: {
+						Range: 2.0f
+					}
+				}
+			}
+			count: 2
+		}
+		{ item: "mekanism:upgrade_speed", count: 8 }
+		{ item: "mekanism:upgrade_energy", count: 8 }
+		{
+			item: {
+				id: "hostilenetworks:prediction"
+				Count: 1b
+				tag: {
+					data_model: {
+						id: "hostilenetworks:shulker"
+					}
+				}
+			}
+		}
+		{ item: "psi:psimetal", count: 16 }
+		{ item: "pamhc2foodextended:bratwurstitem", count: 8 }
+		{ item: "immersiveengineering:breaker_switch" }
+		{ item: "pamhc2foodextended:footlongitem", count: 8 }
+		{ item: "pamhc2foodextended:blueberryjellysandwichitem", count: 8 }
+		{ item: "pamhc2foodextended:cornedbeefbreakfastitem", count: 2 }
+		{ item: "projectred-core:white_illumar", count: 16 }
+		{ item: "chisel:factory/hazard", count: 32 }
+		{ item: "createaddition:electric_motor", count: 2 }
+		{ item: "storagedrawers:emerald_storage_upgrade", count: 4 }
+		{
+			item: {
+				id: "immersiveengineering:revolver"
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						Size: 21
+						Items: [ ]
+					}
+				}
+			}
+		}
+		{ item: "contenttweaker:mech_component_andesite", count: 4 }
+		{ item: "projectred-core:ruby", count: 4 }
+		{ item: "projectred-core:sapphire", count: 4 }
+		{ item: "projectred-core:peridot", count: 4 }
+		{ item: "projectred-core:red_ingot", count: 8 }
+		{ item: "minecraft:white_wool", count: 16 }
+		{ item: "industrialforegoing:straw" }
+		{ item: "psi:cad_colorizer_cyan" }
+		{ item: "psi:cad_colorizer_black" }
+		{ item: "psi:cad_colorizer_red" }
+		{ item: "pamhc2foodextended:mangojellysandwichitem", count: 8 }
+		{ item: "pamhc2foodextended:orangejellysandwichitem", count: 8 }
+		{ item: "pamhc2foodextended:tacoitem", count: 4 }
+		{ item: "quark:music_disc_crickets" }
+		{ item: "projectred-transmission:neutral_bundled_wire", count: 16 }
+		{ item: "mekanism:basic_chemical_tank" }
+		{ item: "mekanism:advanced_bin" }
+		{ item: "mekanism:basic_fluid_tank" }
+		{ item: "storagedrawers:controller" }
+		{ item: "storagedrawers:quantify_key" }
+		{ item: "envirocore:litherite_crystal", count: 16 }
+		{ item: "envirocore:erodium_crystal", count: 8 }
+		{ item: "quark:indigo_crystal", count: 6 }
+		{ item: "quark:white_crystal", count: 6 }
+		{ item: "quark:orange_rune" }
+		{ item: "quark:cyan_rune" }
+		{ item: "tconstruct:necrotic_bone", count: 2 }
+		{ item: "minecraft:prismarine_crystals", count: 32 }
+		{ item: "mekanism:elite_universal_cable", count: 16 }
+		{ item: "immersiveengineering:ingot_electrum", count: 8 }
+		{
+			item: {
+				id: "minecraft:elytra"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "mekanism:industrial_alarm", count: 64 }
+		{ item: "mysticalagriculture:redstone_essence", count: 32 }
+		{ item: "psi:exosuit_sensor_water" }
+		{ item: "minecraft:dragon_head" }
+		{
+			item: {
+				id: "mysticalagriculture:watering_can"
+				Count: 1b
+				tag: {
+					Water: 0b
+				}
+			}
+		}
+		{ item: "chisel:futura/wavy", count: 8 }
+		{ item: "minecraft:popped_chorus_fruit", count: 16 }
+		{
+			item: {
+				id: "computercraft:disk"
+				Count: 1b
+				tag: {
+					Color: 1118481
+				}
+			}
+		}
+		{
+			item: {
+				id: "computercraft:disk"
+				Count: 1b
+				tag: {
+					Color: 15040472
+				}
+			}
+		}
+		{ item: "mekanism:upgrade_stone_generator" }
+		{ item: "mekanism:ingot_tin", count: 16 }
+		{ item: "pamhc2crops:soybeanseeditem", count: 8 }
+		{ item: "create:brass_casing", count: 16 }
+	]
+}

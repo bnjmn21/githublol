@@ -1,0 +1,199 @@
+[general]
+	#The Application ID of the Discord App to use. Replace this with your client id from the discord dashboard to change the name of the app
+	applicationID = 762726289341677668
+	#Enable/Disable the mod
+	enabled = true
+	#Enable/Disable debugging mode. WARNING: MAY CAUSE LOG SPAM!
+	debugging = false
+	#Enable/Disable the in game config screen
+	configScreen = true
+	#Display the Icon and Pack Name in place of LargeImage from compatible launchers. DOES NOT WORK WITH CUSTOM APPS! ONLY THE DEFAULT ONE!
+	launcherIntegration = false
+	#Internal Version Number. NO TOUCHY!
+	version = 16
+
+[init]
+	#Enable/Disable the Game Loading Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Pls wait"
+	#The second line of text under the app name
+	state = "Game Starting..."
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "mclogo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Pls wait bro"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ""
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	buttons = []
+
+[main_menu]
+	#Enable/Disable the Main Menu Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% doin' nothin'"
+	#The second line of text under the app name
+	state = "Chilling in the menu"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "mclogo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Minecraft 1.16, %mods% Mods"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "bricks"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Menu"
+	buttons = []
+
+[server_list]
+	#Enable/Disable the Server List Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is looking for a server"
+	#The second line of text under the app name
+	state = "Looking at the server list"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "mclogo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Minecraft 1.16, %mods% Mods"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "bricks"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Menu"
+	buttons = []
+
+[realms_list]
+	#Enable/Disable the Realms Screen Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is looking for a Realm"
+	#The second line of text under the app name
+	state = "bro who even uses realms bro"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "mclogo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Minecraft 1.16, %mods% Mods"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "bricks"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Menu"
+	buttons = []
+
+[join_game]
+	#Enable/Disable the Join Game Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is joining a game"
+	#The second line of text under the app name
+	state = "Joining Game"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "mclogo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Minecraft 1.16, %mods% Mods"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "dirt"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Joining"
+	buttons = []
+
+[single_player]
+	#Enable/Disable the Single Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Currently In %world%"
+	#The second line of text under the app name
+	state = "Playing Single Player"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "mclogo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Minecraft 1.16, %mods% Mods"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "gold"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Single Player"
+	buttons = []
+
+[multi_player]
+	#Enable/Disable the Multi Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Playing on %servername% with %players% players"
+	#The second line of text under the app name
+	state = "Playing Multi Player"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "mclogo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Minecraft 1.16, %mods% Mods"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "diamond"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Multi Player"
+	buttons = []
+
+[realms]
+	#Enable/Disable the Realms Game Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Playing on %realmname%"
+	#The second line of text under the app name
+	state = "Playing on a Realm"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "mclogo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Minecraft 1.16, %mods% Mods"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = "grass"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Realms"
+	buttons = []
+
+[generic]
+	#The first line of text under the app name
+	description = "Playing Minecraft"
+	#The second line of text under the app name
+	state = ""
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = "mclogo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Minecraft 1.16, %mods% Mods"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ""
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	buttons = []
+
+[dimension_overrides]
+	enabled = false
+
+	[[dimension_overrides.dimensions]]
+		name = "overworld"
+		description = "%player% is in The Overworld"
+		state = ""
+		largeImageKey = "overworld"
+		largeImageText = "In the Overworld"
+		smallImageKey = "mclogo"
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_nether"
+		description = "%player% is in The Nether"
+		state = ""
+		largeImageKey = "nether"
+		largeImageText = "In the Nether"
+		smallImageKey = "mclogo"
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_end"
+		description = "%player% is in The End"
+		state = ""
+		largeImageKey = "end"
+		largeImageText = "In the End"
+		smallImageKey = "mclogo"
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+
