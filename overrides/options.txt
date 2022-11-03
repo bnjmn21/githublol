@@ -119,9 +119,9 @@ key_key.journeymap.fullscreen.west:key.keyboard.left
 key_key.journeymap.fullscreen.disable_buttons:key.keyboard.unknown
 key_key.enchdesc.show:key.keyboard.left.shift
 key_key.ftbultimine:key.keyboard.grave.accent
-key_Toggle Drippy Customization Overlay | CTRL + ALT + :key.keyboard.unknown
 key_Reload Menu | CTRL + ALT + :key.keyboard.unknown
 key_Toggle Customization Overlay | CTRL + ALT + :key.keyboard.unknown
+key_Toggle Drippy Customization Overlay | CTRL + ALT + :key.keyboard.unknown
 key_key.ftbchunks.map:key.keyboard.unknown
 key_key.ftbchunks.minimap.zoomIn:key.keyboard.unknown
 key_key.ftbchunks.minimap.zoomOut:key.keyboard.unknown
@@ -155,18 +155,17 @@ key_key.tconstruct.leggings_interact:key.keyboard.c
 key_key.toggle_focus.desc:key.keyboard.tab
 key_psimisc.keybind:key.keyboard.m
 key_key.mekanismadditions.voice:key.keyboard.unknown
+key_quark.keybind.lock_rotation:key.keyboard.k
 key_quark.keybind.back:key.mouse.4
+key_quark.keybind.change_hotbar:key.keyboard.r
+key_quark.keybind.autorun:key.keyboard.unknown
 key_key.ftbquests.quests:key.keyboard.l
-key_key.control:key.keyboard.left.control
 key_quark.keybind.sort_player:key.keyboard.unknown
 key_quark.keybind.sort_container:key.keyboard.unknown
-key_quark.keybind.camera_mode:key.keyboard.f12
+key_key.control:key.keyboard.left.control
 key_quark.keybind.transfer_insert:key.keyboard.unknown
 key_quark.keybind.transfer_extract:key.keyboard.unknown
 key_quark.keybind.shift_lock:key.keyboard.unknown
-key_quark.keybind.change_hotbar:key.keyboard.r
-key_quark.keybind.lock_rotation:key.keyboard.k
-key_quark.keybind.autorun:key.keyboard.unknown
 key_quark.emote.no:key.keyboard.unknown
 key_quark.emote.yes:key.keyboard.unknown
 key_quark.emote.wave:key.keyboard.unknown
@@ -185,6 +184,7 @@ key_quark.keybind.patreon_emote.dab:key.keyboard.unknown
 key_quark.keybind.patreon_emote.jet:key.keyboard.unknown
 key_quark.keybind.patreon_emote.exorcist:key.keyboard.unknown
 key_quark.keybind.patreon_emote.zombie:key.keyboard.unknown
+key_quark.keybind.camera_mode:key.keyboard.f12
 key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_key.cyclic.cake:key.keyboard.unknown
